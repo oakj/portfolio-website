@@ -1,0 +1,23 @@
+@import "../config/variables";
+
+.container {
+    // flexbox
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // dimensions
+    height: 5rem;
+
+    // positioning
+    position: sticky;
+    top: 0;
+
+    // styling
+    background-color: $color-primary-white;
+
+    .logo {
+        font-size: 2.4rem;
+        margin: 0 2rem 0 2rem; // top-right-bottom-left
+    }
+}
