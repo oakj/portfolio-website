@@ -1,0 +1,41 @@
+.bg {
+    // stacking
+    opacity: .5;
+    z-index: -1;
+  
+    // dimensions
+    height: 123.5rem;
+    width: 123.5rem;
+
+    // styling
+    border: 1rem solid transparent;
+    border-radius: 999px;
+    overflow: hidden;
+
+    // position
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -32%);
+
+    .content {
+        // position
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -20%);
+    }
+  }
+
+.section_heading {
+    font-size: 9rem;
+    font-weight: 500;
+}
+
+.about_p {
+    font-size: 2.4rem;
+}
+
+.contact_p {
+    font-size: 4.2rem;
+}
