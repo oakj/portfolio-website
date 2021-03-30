@@ -1,41 +1,192 @@
-.bg {
-    // stacking
-    opacity: .5;
-    z-index: -1;
-  
-    // dimensions
-    height: 123.5rem;
-    width: 123.5rem;
-
-    // styling
-    border: 1rem solid transparent;
-    border-radius: 999px;
-    overflow: hidden;
-
+.home {
     // position
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -32%);
+    margin-left: 20rem;
 
-    .content {
+    .bg {
+        // stacking
+        opacity: .5;
+        z-index: -1;
+      
+        // dimensions
+        height: 123.5rem;
+        width: 123.5rem;
+    
+        // styling
+        border: 1rem solid transparent;
+        border-radius: 999px;
+        overflow: hidden;
+    
         // position
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(0, -20%);
+        transform: translate(-50%, -32%);
+    
+        .content {
+            // position
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(0, -20%);
+        }
     }
-  }
 
-.section_heading {
-    font-size: 9rem;
-    font-weight: 500;
+    .home_headings {
+        margin-top: 17.5rem;
+
+        .home_h1 {
+            margin: 1rem auto 1rem auto;
+            font-weight: 500;
+        }
+    
+        .home_h3 {
+            margin: 1rem auto 1rem auto;
+            font-weight: 500;
+        }
+    }
+
 }
 
-.about_p {
-    font-size: 2.4rem;
+.about {
+    // flexbox
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // positioning
+    margin-top: 45rem;
+    padding-top: 15rem;
+
+    .section_heading {
+        // typgrography
+        font-size: 9rem;
+        font-weight: 500;
+
+        // styling
+        border-bottom: .1rem solid #C4C4C4;
+        width: 54rem;
+
+        // flexbox
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .about_p_container {
+        // flexbox
+        display: flex;
+        flex-direction: column;
+
+        .about_p {
+            font-size: 2.4rem;
+
+            // positioning
+            margin: auto 20rem auto 20rem;
+
+            // styling
+            columns: 2 auto;
+            column-gap: 4rem;
+            column-rule: .1rem solid #BFBEBE;
+            hyphens: auto;
+        }
+    }
+
 }
 
-.contact_p {
-    font-size: 4.2rem;
+.projects {
+
+    .section_heading {
+        // typgrography
+        font-size: 9rem;
+        font-weight: 500;
+
+        // styling
+        border-bottom: .1rem solid #C4C4C4;
+        width: 54rem;
+
+        // flexbox
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .project_container {
+        margin: auto 30rem auto 30rem;
+        display: flex;
+        justify-content: center;
+    
+        .project_left {
+            // flex column size based on parent container
+            flex: 1;
+            // flexbox - for this instance
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+    
+            .project_name {
+                font-size: 3.2rem;
+            }
+            
+            .project_img_container {
+                font-size: 3.2rem;
+            }
+            
+            .project_tech {
+                font-size: 2.4rem;
+            }
+            
+            .link {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .project_right {
+            flex: 1;
+    
+            .project_description {
+                font-size: 2.4rem;
+                text-decoration: underline;
+            }
+            
+            .project_description_text {
+                font-size: 2.4rem;
+            }
+        }
+    }
+    
+    .btn_view_more {
+        // flexbox
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // typography
+        font-size: 2.4rem;
+
+        // positioning
+        margin-left: 2rem;
+    }
+}
+
+.contact {
+
+    .section_heading {
+        // typgrography
+        font-size: 9rem;
+        font-weight: 500;
+
+        // styling
+        border-bottom: .1rem solid #C4C4C4;
+        width: 54rem;
+
+        // flexbox
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .contact_p {
+        font-size: 4.2rem;
+    }
 }
